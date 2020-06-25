@@ -54,7 +54,7 @@ Then mount Google Drive, all your storage in the cloud will become accessible at
 from google.colab import drive
 drive.mount('/content/drive')
 ```
-Unzip your dataset using bash command `unzip \$PATH\_TO\_ZIP\_DATASET \$DESTINATION\_PATH` in my case:
+Unzip your dataset using bash command `unzip $PATH_TO_ZIP_DATASET $DESTINATION_PATH` in my case:
 ```
 !unzip /content/drive/My\ Drive/Colab\ Notebooks/DOPE/NVCapturedData.zip -d ./dataset/
 ```
@@ -116,11 +116,11 @@ Training is monitored by checking loss on training set and belief maps represent
 
 Running inference on images from camera is explained well below, the main things you need to do in order to use the net 
 on costum objects are:
-* Calibrate your camera by modifying `./config/camera\_info.yaml`
-* Associate your trained weights with your object by modifying  `./config/config\_pose.yaml.`
+* Calibrate your camera by modifying `./config/camera_info.yaml`
+* Associate your trained weights with your object by modifying  `./config/config_pose.yaml.`
 
 RVIZ can then be used to display inference results in realtime, after launching it the two image topics should be added 
-by clicking add in the bottom left and selecting topics `"/dope/webcam/image\_raw"` and `"dope/rgb\_points/image\_raw"`
+by clicking add in the bottom left and selecting topics `"/dope/webcam/image_raw"` and `"dope/rgb_points/image_raw"`
 
 ![Rviz visualization](images/viz.png)
 
