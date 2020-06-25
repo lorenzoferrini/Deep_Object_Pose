@@ -1,6 +1,7 @@
 /weights
 *.pyc
 *._
+*.mp4
 __pycache__
 venv
 .idea
