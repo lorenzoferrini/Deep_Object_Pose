@@ -10,7 +10,9 @@ weights: {
     # "gelatin":"package://dope/weights/gelatin_60.pth",
     # "meat":"package://dope/weights/meat_20.pth",
     # "mustard":"package://dope/weights/mustard_60.pth",
-    "soup":"package://dope/weights/soup_60.pth",
+    #"soup":"package://dope/weights/soup_60.pth",
+    #"monster":"package://dope/weights/monster_5.pth",
+    "hallonspona":"package://dope/weights/hallonspona_5.pth",
     #"sugar":"package://dope/weights/sugar_60.pth",
     # "bleach":"package://dope/weights/bleach_28_dr.pth"
 }
@@ -24,6 +26,8 @@ dimensions: {
     "soup": [6.7659378051757813,10.185500144958496,6.771425724029541],
     "sugar": [9.267730712890625,17.625339508056641,4.5134143829345703],
     "bleach": [10.267730712890625,26.625339508056641,7.5134143829345703],
+    "monster": [17.116600036621094,6.8723998069763184,6.8723998069763184],
+    "hallonspona": [ 29.277099609375, 19.512599945068359, 13.840800285339355 ],
 }
 
 class_ids: {
@@ -34,6 +38,8 @@ class_ids: {
     "soup":    5,
     "sugar":   6,
     "bleach":  7,
+    "monster":  8,
+    "hallonspona":  9,
 }
 
 draw_colors: {
@@ -44,6 +50,8 @@ draw_colors: {
     "soup": [255, 101, 0],  # orange
     "sugar": [232, 222, 12],  # yellow
     "bleach": [232, 222, 12],  # yellow
+    "monster": [13, 255, 128],  # green
+    "hallonspona": [13, 255, 128],  # green
 }
 
 # optional: provide a transform that is applied to the pose returned by DOPE
@@ -76,6 +84,8 @@ mesh_scales: {
     "soup":    0.01,
     "sugar":   0.01,
     "bleach":  0.01,
+    "monster":  0.01,
+    "hallonspona":  0.01,
 }
 
 # Config params for DOPE
